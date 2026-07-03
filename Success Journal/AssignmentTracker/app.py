@@ -9,7 +9,7 @@ from db_connection import get_db_connection  # Your existing database connection
 app = Flask(__name__)
 
 # Configure the API key for Google Generative AI
-API_KEY = 'AIzaSyCaXlaXnIXZPOwSIbi6d7dWneZDF4-CvGo'  # Replace with your actual API key
+API_KEY = '' 
 ai.configure(api_key=API_KEY)
 model = ai.GenerativeModel("gemini-1.5-flash-latest")
 chat = model.start_chat()
